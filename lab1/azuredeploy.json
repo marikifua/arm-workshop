@@ -4,10 +4,10 @@
     "parameters": {
         "storageAccountPrefix": {
             "type": "string",
-            "defaultValue" : "marikifua",
+            "defaultValue": "marikifua",
             "maxLength": 11,
             "metadata": {
-                "description": "Storage Account Prefix"
+                "description": "Prefix for the storage account name"
             }
         },
         "accountType": {
@@ -19,12 +19,12 @@
                 "Standard_RAGRS"
             ],
             "metadata": {
-                "description": "SKU type"
+                "description": "SKU for the storage account"
             }
         }
     },
     "variables": {
-        "storageAccount": "[toLower(concat(parameters('storageAccountPrefix'),uniqueString(subscription().subscriptionId)))]"
+        "storageAccount": "[toLower(concat(parameters('storageAccountPrefix'), uniqueString( resourceGroup().id )))]"
     },
     "resources": [
         {

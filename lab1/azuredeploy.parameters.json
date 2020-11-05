@@ -6,7 +6,7 @@
             "value": "marikifua"
         },
         "accountType": {
-            "value": "Standart_LRS"
+            "value": "Standard_LRS"
         }
     }
 }
