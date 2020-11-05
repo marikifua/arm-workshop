@@ -7,7 +7,7 @@
             "defaultValue" : "marikifua",
             "maxLength": 11,
             "metadata": {
-                "description": "Prifix for the Storage Account Name"
+                "description": "Storage Account Prefix"
             }
         },
         "accountType": {
@@ -19,7 +19,7 @@
                 "Standard_RAGRS"
             ],
             "metadata": {
-                "description": "SKU for the storage account"
+                "description": "SKU type"
             }
         }
     },
